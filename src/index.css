@@ -1,0 +1,378 @@
+.starPageBody {
+  margin: 0;
+  padding: 0;
+  background-image: url("assets/newAssets/Start Page.png");
+  background-repeat: no-repeat;
+}
+
+.eggChoiceBody {
+  margin: 0;
+  padding: 0;
+  background-image: url("assets/newAssets/EggBackground.png");
+  background-repeat: no-repeat;
+}
+
+.endPage {
+  margin: 0;
+  padding: 0;
+  background-image: url("assets/newAssets/EndPage.png");
+  background-repeat: no-repeat;
+}
+
+.header-container {
+  -webkit-app-region: drag;
+  user-select: none; /* Prevent text selection while dragging */
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 40px; /* Adjust as needed */
+  background-color: #ffffff00; /* Adjust as needed */
+}
+
+.window-control {
+  width: 70px; /* Adjust size */
+  height: 70px;
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 5px;
+  transition: transform 0.2s;
+  -webkit-app-region: no-drag; /* Prevents buttons from being draggable */
+  cursor: pointer;
+}
+
+.window-control img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.window-control:hover {
+  transform: scale(1.1);
+}
+header {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.start-page {
+  position: absolute;
+  top: 520px;
+  left: 100px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #280f00;
+  font-family: "Jacquarda Bastarda 9";
+  display: inline-block;
+  text-align: left;
+  text-shadow: 1px 0 0 rgba(110, 41, 0, 0.69), 0 1px 0 rgba(110, 41, 0, 0.69),
+    -1px 0 0 rgba(110, 41, 0, 0.69), 0 -1px 0 rgba(110, 41, 0, 0.69);
+  margin-left: 50px;
+}
+
+#startButton {
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+  filter: drop-shadow(5px 5px 3px #280f00);
+  border: 3px solid #280f00;
+  box-sizing: border-box;
+  height: 62px;
+  transition: transform 0.2s;
+  background-color: transparent;
+  font-family: "Irish Grover";
+  letter-spacing: 0.05em;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: x-large;
+  background-color: #ffcd81;
+  border-radius: 8px;
+}
+
+#startButton:hover {
+  transform: scale(1.1);
+}
+
+#eggType {
+  font-family: "Irish Grover";
+  text-align: center;
+  /* margin-top: 40px; */
+  filter: drop-shadow(5px 5px 3px #7b2f00);
+  margin-bottom: 5px; /* Space between the text and images */
+  padding-top: 5px;
+  color: #280f00;
+}
+
+/* .image-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  width: 75%; /* Adjust width dynamically */
+/* aspect-ratio: 1/1; Keeps it square */
+/* overflow: hidden; */
+
+/*
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images fit nicely */
+
+.eggBorder {
+  display: flex;
+  flex-direction: column; /* Stack text and images vertically */
+  justify-content: flex-start; /* Align items from the top */
+  align-items: center; /* Center the items horizontally */
+  text-align: center; /* Center the text */
+}
+
+.image-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two images per row */
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  max-width: 600px; /* Limits the grid size */
+  overflow: hidden; /* Prevents overflow */
+}
+
+.egg-item:hover {
+  transform: scale(1.1);
+}
+
+.egg-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.egg-item img {
+  width: 80%; /* Control image size */
+  max-width: 80%; /* Prevents overflow */
+}
+
+.egg-item p {
+  font-family: "Irish Grover", cursive;
+  font-size: 20px;
+  color: #280f00;
+  /* margin-top: 8px; */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.runny-egg {
+  width: 200px; /* Match the actual size of your images */
+  height: 200px;
+  background-size: contain; /* Ensures the image fills the div without resizing */
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: runnyEggFrames 1.5s steps(3) infinite;
+}
+
+/* Keyframes to cycle through 3 images */
+@keyframes runnyEggFrames {
+  0% {
+    background-image: url("assets/newAssets/runnyEggAnimation1.png");
+  }
+  33% {
+    background-image: url("assets/newAssets/runnyEggAnimation2.png");
+  }
+  66% {
+    background-image: url("assets/newAssets/runnyEggAnimation3.png");
+  }
+  100% {
+    background-image: url("assets/newAssets/runnyEggAnimation1.png");
+  }
+}
+
+.sunny-side-up {
+  width: 200px; /* Adjust to fit your image size */
+  height: 200px;
+  background-size: contain; /* Ensures the image is fully visible */
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: sunnySideUpAnim 1.5s steps(5) infinite; /* 2.5s cycle for 5 frames */
+}
+
+/* Keyframes to cycle through 5 images */
+@keyframes sunnySideUpAnim {
+  0% {
+    background-image: url("assets/newAssets/Sunny_Side_Up1.png");
+  }
+  20% {
+    background-image: url("assets/newAssets/Sunny_Side_Up2.png");
+  }
+  40% {
+    background-image: url("assets/newAssets/Sunny_Side_Up3.png");
+  }
+  60% {
+    background-image: url("assets/newAssets/Sunny_Side_Up4.png");
+  }
+  80% {
+    background-image: url("assets/newAssets/Sunny_Side_Up5.png");
+  }
+  100% {
+    background-image: url("assets/newAssets/Sunny_Side_Up1.png");
+  } /* Loops back */
+}
+
+#eggHeader {
+  width: 100%;
+  font-size: 40px; /* Adjust for balance */
+  letter-spacing: 3px; /* Space out letters */
+  line-height: 129.19%;
+  font-family: Kablammo;
+  color: #280f00;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#textFont {
+  width: 90%;
+  max-width: 600px;
+  font-size: 22px; /* Make it more readable */
+  letter-spacing: 1px;
+  font-family: "Irish Grover", cursive; /* Keeps the fun theme */
+  color: #280f00;
+  text-align: left;
+  line-height: 1.6; /* Spacing between lines */
+  margin: 20px auto; /* Center the list */
+  padding: 15px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.37
+  ); /* Light background for visibility */
+  border-radius: 30px; /* Soft rounded edges */
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3); /* Subtle depth */
+}
+
+#textFont li {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 5px 0;
+}
+
+.timerButton {
+  font-family: "Irish Grover", cursive;
+  font-size: 20px;
+  color: #280f00;
+  background-color: #ffcd81; /* Light brown button */
+  padding: 12px 24px;
+  border: 3px solid #280f00;
+  border-radius: 8px;
+  cursor: pointer;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 0px #301200b0;
+  transition: transform 0.1s ease-in-out;
+  margin: 20px;
+}
+
+.timerButton:hover {
+  transform: translateY(2px); /* Press effect */
+  box-shadow: 2px 2px 0px #280f0083;
+}
+
+#buttonAlign {
+  text-align: center;
+}
+
+#timerHeader {
+  width: 700px;
+  /* height: 300px; */
+  position: relative;
+  font-size: 96px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  font-family: "Jersey 10";
+  color: #411900ad;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 1px 0 0 #00000075, 0 1px 0 #00000075, -1px 0 0 #00000075,
+    0 -1px 0 #00000075;
+  line-height: normal;
+}
+
+#timerDisplay {
+  position: relative;
+  margin: 0px;
+  font-size: 90px;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  font-family: "Irish Grover";
+  color: #280f00;
+  text-align: center;
+  align-items: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* line-height: normal; */
+}
+
+@keyframes spinShrinkFade {
+  0% {
+    transform: translateX(-50%) scale(1) rotate(0deg);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-50%) scale(1) rotate(15deg);
+  }
+  60% {
+    transform: translateX(-50%) scale(1) rotate(-30deg);
+  }
+  100% {
+    transform: translateX(-50%) scale(1) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+.hidden {
+  animation: spinShrinkFade 0.8s ease-in-out forwards;
+}
+
+#startTimerButton {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  /* top: 85%; */
+  filter: drop-shadow(5px 5px 3px #280f00);
+  border: 3px solid #280f00;
+  box-sizing: border-box;
+  /* height: 62px; */
+  cursor: pointer;
+  font-family: "Irish Grover", cursive;
+  background-color: #ffcd81;
+  padding: 12px 24px;
+  border-radius: 8px;
+  transition: transform 0.1s ease-in-out;
+  font-size: x-large;
+}
+
+/* Optional: Hover effect for a little bounce */
+#startTimerButton:hover {
+  transform: translateX(-50%) scale(1.05);
+}
+
+#startOverButton {
+  position: absolute;
+  left: 40%;
+  top: 90%;
+  filter: drop-shadow(5px 5px 3px #280f00);
+  border: 3px solid #280f00;
+  box-sizing: border-box;
+  /* height: 62px; */
+  cursor: pointer;
+  font-family: "Irish Grover", cursive;
+  background-color: #ffcd81;
+  /* padding: 12px 24px; */
+  border-radius: 8px;
+  transition: transform 0.1s ease-in-out;
+  font-size: x-large;
+}
+
+#startOverButton:hover {
+  transform: scale(1.1);
+}

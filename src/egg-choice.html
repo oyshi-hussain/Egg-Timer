@@ -1,0 +1,40 @@
+<!-- Egg Choice -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Egg Timer 🐣</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="renderer.js" defer></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jacquarda Bastarda 9:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Irish Grover:wght@400&display=swap" />
+</head>
+<body class="eggChoiceBody">
+  <!-- Header will be dynamically loaded here -->
+  <main class="eggBorder">
+    <h1 id="eggType">Select Your Egg Type</h1>
+
+    <div class="image-box">
+      <div class="egg-item egg-option" onclick="loadPage('runny-egg.html')">
+          <div class="runny-egg"></div>
+          <p>Runny Egg</p>
+      </div>
+      <div class="egg-item egg-option" onclick="loadPage('scrambled-egg.html')">
+        <img src="assets/ScrambledEgg.png" alt="Scrambled Egg">
+        <p>Scrambled Egg</p>
+      </div>
+      <div class="egg-item egg-option" onclick="loadPage('hard-boiled.html')">
+        <img src="assets/HardBoiled.png" alt="Hard Boiled Egg">
+        <p>Hard Boiled</p>
+      </div>
+      <div class="egg-item egg-option" onclick="loadPage('sunny-egg.html')">
+          <div class="sunny-side-up"></div>
+          <p>Sunny Side Up</p>
+      </div>   
+  </div>
+  
+
+  </main>
+
+</body>
+</html>
