@@ -7,7 +7,7 @@ Egg Timer is a fun and interactive desktop app built with Electron, allowing you
 ## 📥 Download & Install
 
 ### 🍳 macOS
-- **Download the latest `.dmg` file** from [GitHub Releases](https://github.com/YOUR_USERNAME/YOUR_REPO/releases).
+- **Download the latest `.dmg` file** from [GitHub Releases](https://github.com/oyshi-hussain/Egg-Timer/releases/tag/v1.0.0).
 - Open the `.dmg` file.
 - **Drag and drop the Egg Timer app into the Applications folder**.
 - Launch the app and start timing your eggs! 🎉
